@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   python_min: "3.12"
-  version: 0.1.0
+  version: "0.2.0"
 
 package:
   name: fenicsx-compat
@@ -10,13 +10,13 @@ package:
 
 source:
   url: "https://pypi.org/packages/source/f/fenicsx-compat/fenicsx_compat-${{ version }}.tar.gz"
-  sha256: 33c5ca435f363f5f9d59867e817776594663a1ff6b1e64da8cfdc4183b8ee5e4
+  sha256: db000ff35dd2df78b17a4a53aa87a4234b1569123faff8e2cfc2e1413069c81c
 
 build:
   number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  
+
 
 requirements:
   host:
@@ -27,7 +27,7 @@ requirements:
     - python >=${{ python_min }}
     - packaging
     - fenics-dolfinx >=0.10.0
-    
+
 tests:
   - python:
       imports:
