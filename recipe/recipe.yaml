@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   python_min: "3.12"
-  version: "0.2.0"
+  version: "0.3.0"
 
 package:
   name: fenicsx-compat
@@ -10,7 +10,7 @@ package:
 
 source:
   url: "https://pypi.org/packages/source/f/fenicsx-compat/fenicsx_compat-${{ version }}.tar.gz"
-  sha256: db000ff35dd2df78b17a4a53aa87a4234b1569123faff8e2cfc2e1413069c81c
+  sha256: e3e14af4b7ee7480ea95c2df631283174e7674b29802f9e0b99fba8e5f2ede57
 
 build:
   number: 0
